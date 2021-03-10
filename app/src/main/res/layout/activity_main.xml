@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/btn_login_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:padding="20dp"
+        tools:srcCompat="@drawable/ic_eamil_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="503dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+        <EditText
+            android:id="@+id/register_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:hint="@string/hint_id"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <EditText
+            android:id="@+id/register_pw"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:drawableLeft="@drawable/ic_https_black_24dp"
+            android:hint="@string/hint_password"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="@color/input_register_hint" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/my_btn"
+            android:text="@string/btn_login"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:orientation="horizontal">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/googleButton"
+
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:layout_weight="1">
+
+            </com.google.android.gms.common.SignInButton>
+
+            <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+                android:id="@+id/naverButton"
+                android:layout_width="wrap_content"
+                android:layout_height="93dp"
+                android:layout_marginTop="20dip"
+                android:layout_weight="1"
+                android:paddingBottom="50dp"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/findidpw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="center"
+                android:text="@string/findidpw"
+                android:textColor="@color/input_login_hint"
+                android:textColorHint="@color/input_login_hint" />
+
+            <Button
+                android:id="@+id/reg_btn"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:gravity="center"
+                android:text="@string/signup"
+                android:textColor="@color/input_login_hint"
+                android:textColorHint="@color/input_login_hint" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

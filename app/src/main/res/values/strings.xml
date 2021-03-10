@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FitHe</string>
+    <string name="title_activity_reg">regActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hint_id">ID를 입력하세요</string>
+    <string name="hint_password">Password를 입력하세요</string>
+    <string name="hint_email">이메일을 입력하세요</string>
+    <string name="logout_btn">로그아웃</string>
+    <string name="logout_btn1">로그아웃1111</string>
+    <string name="signInButton">Sign In With Google</string>
+    <string name="findidpw">Forgot your password?</string>
+    <string name="signup">Sign up</string>
+    <string name="input_phone">Input PhoneNumber</string>
+    <string name="input_auth">Input Auth</string>
+
+    <string name="hint_name">성명을 입력하세요</string>
+    <string name="hint_mobileNO">휴대폰번호를 입력하세요</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_register">회원가입</string>
+    <string name="btn_logout">로그아웃</string>
+
+
+    <string name="naver_client_id">aRlA2v6pNfyBOsqQs1uj</string>
+    <string name="naver_client_secret">Owi1dyHutC</string>
+    <string name="naver_client_name">fithe</string>
+
+
+    <string name="app_name1">MyNavigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

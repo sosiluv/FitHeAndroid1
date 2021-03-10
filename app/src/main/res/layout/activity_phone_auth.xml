@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_title"
+        bind:ignore="MissingConstraints,VectorDrawableCompat"
+        android:layout_marginLeft="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_self_auth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="본인인증"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView3"
+        android:layout_marginLeft="28dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_self_auth_need"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="본인인증이 필요합니다."
+        android:textColor="#FF5722"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/text_self_auth"
+        app:layout_constraintTop_toBottomOf="@id/text_self_auth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="휴대폰예(01011112222)"
+        android:textColor="@color/input_login_hint"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/text_self_auth"
+        app:layout_constraintTop_toBottomOf="@id/text_self_auth_need" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fieldPhoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="numberDecimal"
+        android:maxLength="10"
+        android:padding="8dp"
+        android:singleLine="true"
+
+        app:layout_constraintEnd_toStartOf="@id/buttonStartVerification"
+        app:layout_constraintStart_toStartOf="@id/text_self_auth"
+        app:layout_constraintTop_toBottomOf="@id/text_phone"
+        android:layout_marginRight="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/buttonStartVerification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+
+        android:text="인증요청"
+        android:textColor="#FF5722"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/fieldPhoneNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fieldPhoneNumber"
+        app:layout_constraintTop_toTopOf="@id/fieldPhoneNumber"
+        android:layout_marginRight="28dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_enter_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="인증번호 입력"
+        android:textColor="@color/input_login_hint"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/text_self_auth"
+        app:layout_constraintTop_toBottomOf="@id/fieldPhoneNumber" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/fieldVerificationCode"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/my_btn2"
+        android:enabled="false"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        android:singleLine="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text_self_auth"
+        app:layout_constraintTop_toBottomOf="@id/text_enter_phone"
+
+        android:layout_marginRight="28dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/buttonResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+
+        android:text="인증번호 재전송"
+        android:textColor="#FF5722"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/text_self_auth"
+        app:layout_constraintTop_toBottomOf="@id/fieldVerificationCode" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/buttonVerifyPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/my_btn"
+        android:enabled="false"
+        android:gravity="center"
+
+        android:paddingTop="11dp"
+        android:paddingBottom="12dp"
+        android:text="인증하기"
+        android:textColor="@color/btn_login_bg"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonResend"
+
+         />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

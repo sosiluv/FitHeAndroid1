@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "457718837790",
+    "project_id": "fithe-649b5",
+    "storage_bucket": "fithe-649b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457718837790:android:07852a6fabaa596eab340f",
+        "android_client_info": {
+          "package_name": "a.b.c.loginandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457718837790-tupapo4dv03gjd3vv2eqjeuflb8l3apn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a.b.c.loginandroid",
+            "certificate_hash": "e4b35049848817b07748c8857fdefeacb82bf22d"
+          }
+        },
+        {
+          "client_id": "457718837790-nksnnrrcseerglnhr853gv56lstupgqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdC5H6kLNrT3gw_JE6DBEMOeH0e8Z3kE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457718837790-nksnnrrcseerglnhr853gv56lstupgqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

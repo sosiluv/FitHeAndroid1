@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fithe.login.loginandroid">
+
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LoginAndroid"
+        tools:replace="android:allowBackup">
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCdz9TBx7NfSGIZoaD6AYjur7L3kQhLP2M"/>
+        <activity android:name="com.fithe.login.MailActivity"></activity>
+        <activity
+            android:name="com.fithe.login.LoadingActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fithe.fragment.NaviMainActivity" />
+        <activity android:name="com.fithe.fragment.Tab_Write_Form"/>
+        <activity android:name="com.fithe.login.PhoneAuthActivity" />
+        <activity android:name="com.fithe.login.logoutActivity" />
+        <activity
+            android:name="com.fithe.login.regActivity"
+            android:label="@string/title_activity_reg"
+            android:theme="@style/Theme.LoginAndroid.NoActionBar" />
+        <activity android:name="com.fithe.login.LoginActivity"></activity>
+
+    </application>
+
+</manifest>
